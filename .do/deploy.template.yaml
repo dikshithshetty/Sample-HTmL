@@ -1,8 +1,9 @@
 spec:
-  name: sample-html
-  static_sites:
-  - environment_slug: html
-    git:
-      branch: main
-      repo_clone_url: https://github.com/digitalocean/sample-html.git
-    name: sample-html
+  name: shark-app-2
+  services:
+  - name: ubuntu-nginx
+    image:
+        registry: ubuntu
+        registry_type: DOCKER_HUB
+        repository: nginx
+        tag: latest
